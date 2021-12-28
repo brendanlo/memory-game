@@ -1,0 +1,126 @@
+/* you can add to or change this. */
+body {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;;
+}
+
+h1 {
+  font-family: 'Pushster', cursive;
+}
+.game div {
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 100px;
+  height: 150px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  overflow-wrap: break-word;
+  color:white;
+}
+
+#description {
+  text-align: justify;
+  padding: 10px 5%;
+}
+
+.bamboo {
+  background-image: url("wood-images/bamboo.jpg");
+  background-color: #ba8d49;
+  /* background-size: 0 0; */
+}
+.cedar{
+  background-image: url("wood-images/cedar.jpg");
+  background-color: #ba8d49;
+  /* background-size: 0 0; */
+}
+.cherry {
+  background-image: url("wood-images/cherry.jpg");
+  background-color: #ba8d49;
+  /* background-size: 0 0; */
+}
+.maple {
+  background-image: url("wood-images/maple.jpg");
+  background-color: #ba8d49;
+  /* background-size: 0 0; */
+}
+.olive {
+  background-image: url("wood-images/olive.jpg");
+  background-color: #ba8d49;
+  /* background-size: 0 0; */
+}
+.pine {
+  background-image: url("wood-images/pine.jpg");
+  background-color: #ba8d49;
+  /* background-size: 0 0; */
+}
+.purpleheart {
+  background-image: url("wood-images/purpleheart.jpg");
+  background-color: #ba8d49;
+  /* background-size: 0 0; */
+}
+.walnut {
+  background-image: url("wood-images/walnut.jpg");
+  background-color: #ba8d49;
+  /* background-size: 0 0; */
+}
+.zebrawood {
+  background-image: url("wood-images/zebrawood.jpg");
+  background-color: #ba8d49;
+  /* background-size: 0 0; */
+}
+
+
+.closed-card {
+  width: 15%;
+  height: 150px;
+  /* background-color: #ba8d49; */
+  stroke: black;
+  background-size:100% 100%;
+  position: inline;
+  background-image: url("wood-images/card.png");
+}
+
+.flipped, .matched {
+  background-size: 100% 100%;
+  text-align: center;
+  position:inline-block;
+  font-family: 'Pushster', cursive;
+
+}
+
+
+header {
+  position:absolute;
+  top:50%;
+  transform: translate(0,-50%);
+  /* display: inline-block; */
+}
+
+
+
+.top-header {
+  position:relative;
+  /* top:0%; */
+  transform: translate(0,0);
+  animation: move-up ease-in-out 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes move-up {
+  0% {
+    position:absolute;
+    top:50%;
+    transform:translate(0,-50%);
+  }
+
+  100% {
+    position:relative;
+    transform:translate(0,0%);
+    top: 0%;
+  }
+}
+
+
